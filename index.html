@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sathyasri N | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #102a56;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+header h2 {
+    font-size: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+.hero {
+    padding: 70px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    background: #e8f0ff;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #102a56;
+    margin: 12px 0;
+}
+
+.hero p {
+    color: #555;
+    font-size: 17px;
+}
+
+.profile {
+    min-width: 180px;
+    min-height: 180px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 11px 20px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+section {
+    padding: 50px 8%;
+}
+
+section h2 {
+    color: #102a56;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.about p {
+    color: #555;
+}
+
+.skills {
+    background: #e8f0ff;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-list span {
+    background: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    color: #102a56;
+    font-weight: bold;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #dce5f3;
+    box-shadow: 0 4px 12px #00000008;
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+}
+
+.education {
+    background: #e8f0ff;
+}
+
+.contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    background: #102a56;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 45px 6%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .profile {
+        min-width: 130px;
+        min-height: 130px;
+        font-size: 38px;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>SATHYASRI N</h2>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <p>WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hello, I'm Sathyasri N</h1>
+
+        <p>
+            I am a second-year B.Tech Artificial Intelligence
+            and Data Science student at V.S.B. College of
+            Engineering and Technical Campus, Coimbatore.
+            I am interested in Python, Data Science,
+            Artificial Intelligence and Web Development.
+        </p>
+
+        <a href="#projects" class="btn">View My Projects</a>
+    </div>
+
+    <div class="profile">SN</div>
+</section>
+
+<section class="about" id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I am a passionate student who enjoys learning
+        new technologies and improving my technical skills.
+        I want to gain practical experience, develop useful
+        projects and build a successful career in technology.
+    </p>
+</section>
+
+<section class="skills" id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skill-list">
+        <span>Python</span>
+        <span>Data Science</span>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>Responsive Web Design</span>
+        <span>Communication</span>
+        <span>Teamwork</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>AI Chatbot</h3>
+            <p>
+                A beginner-level Python project that
+                demonstrates basic chatbot conversation
+                logic and programming concepts.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Fact Lens</h3>
+            <p>
+                A mini-project concept designed to help
+                users check information and identify
+                potentially misleading news.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Personal Portfolio</h3>
+            <p>
+                A responsive website created using
+                HTML and CSS to showcase my profile,
+                skills, education and projects.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="education" id="education">
+    <h2>Education & Learning</h2>
+
+    <div class="card">
+        <h3>B.Tech Artificial Intelligence and Data Science</h3>
+        <p>
+            V.S.B. College of Engineering and Technical Campus,
+            Coimbatore.
+        </p>
+        <p>Currently studying in the second year.</p>
+    </div>
+
+    <br>
+
+    <div class="card">
+        <h3>Technical Learning</h3>
+        <p>
+            Learning Python, Data Science, Artificial Intelligence,
+            HTML and CSS through coursework and practice.
+        </p>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <p>
+        Email:
+        <a href="mailto:sathyasrineelakrishnan2007@gmail.com">
+            sathyasrineelakrishnan2007@gmail.com
+        </a>
+    </p>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/" target="_blank">
+            Visit LinkedIn
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Sathyasri N | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
